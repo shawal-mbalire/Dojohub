@@ -1,0 +1,12 @@
+avrdude  -p  partno  [-b baudrate] [-B bitclock] [-c programmer-id] [-C config-file] [-A] [-D] [-e] [-E exitspec[,exitspec]] [-F] [-i delay]  [-l  logfile]  [-n] [-O]  [-P  port]  [-q]  [-T  cmd]  [-t] [-U memory:op:filename:filefmt] [-v] [-x extended_param] [-V]
+
+avrdude 
+-C --> config file
+-v vebose
+-p partno(atmega328p)
+-c programmer-is
+-U memory:op:filename:filefmt
+    memory: lfuse hfuse efuse lock eeprom flash
+    op: r,w,v  (read write verify)
+    filename:path or hardcoded number to be written to the fuse
+    filefmt: i,m,r,e,s ( intel-hex-format, m for hardcoded values setting fuse)
